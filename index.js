@@ -9,9 +9,8 @@ const app = express()
 connectDB()
 
 app.use(cors({
-    // origin: "http://localhost:5173"
+    origin: "http://localhost:5173"
 
-    origin: "https://frontend-todo-new.vercel.app"
 }))
 
 app.use(express.json())
